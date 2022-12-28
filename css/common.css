@@ -32,9 +32,8 @@ align-items: center;
 }
  img{
  margin-bottom: 40px;
- border-radius: 2%;
  }
 
  li{
-  text-decoration: none;
+  list-style-type: none;
  }

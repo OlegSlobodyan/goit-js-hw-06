@@ -14,12 +14,10 @@ const images = [
 ];
 
 const pictures = document.querySelector(".gallery");
-const image = document.querySelectorAll("img");
-pictures.classList.add(".design-img");
 
+let imagesDoc = ``;
 images.forEach((image) => {
-  pictures.insertAdjacentHTML(
-    "afterbegin",
-    `<li><img src="${image.url}" alt="${image.alt}" width = "800" heigth = "400"></li>`
-  );
+  imagesDoc += `<li><img src="${image.url}" alt="${image.alt}" width = "800" heigth = "400"></li>`;
 });
+pictures.insertAdjacentHTML("afterbegin", imagesDoc);
+
